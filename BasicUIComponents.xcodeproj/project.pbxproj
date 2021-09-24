@@ -41,6 +41,9 @@
 		23E507A826EDE7AB00596FFF /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E507A726EDE7AB00596FFF /* DetailTableViewController.swift */; };
 		814BDEA026FE7180003D20BF /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BDE9F26FE7180003D20BF /* HeroViewController.swift */; };
 		814BDEA226FE718B003D20BF /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BDEA126FE718B003D20BF /* HeroDetailViewController.swift */; };
+		814BDEA426FE78C0003D20BF /* CompositionalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BDEA326FE78C0003D20BF /* CompositionalCollectionViewController.swift */; };
+		814BDEA626FE7C5D003D20BF /* compositionalCVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BDEA526FE7C5D003D20BF /* compositionalCVModel.swift */; };
+		814BDEA926FE7FC7003D20BF /* CompositionalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BDEA826FE7FC7003D20BF /* CompositionalCollectionViewCell.swift */; };
 		A722D32F81951FB50F9FA526 /* Pods_BasicUIComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D193D7DF6E10318ACF4F84 /* Pods_BasicUIComponentsTests.framework */; };
 		C33FE4A644DEC36C820997A0 /* Pods_BasicUIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D8BFCDE32E1131450C72B8 /* Pods_BasicUIComponents.framework */; };
 		FE84D3384F674CEA3EE17D25 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0D8265B781EAE1FEDEF389 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework */; };
@@ -109,6 +112,9 @@
 		69C443DF0AAAE33EAB45881A /* Pods-BasicUIComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		814BDE9F26FE7180003D20BF /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		814BDEA126FE718B003D20BF /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		814BDEA326FE78C0003D20BF /* CompositionalCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewController.swift; sourceTree = "<group>"; };
+		814BDEA526FE7C5D003D20BF /* compositionalCVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = compositionalCVModel.swift; sourceTree = "<group>"; };
+		814BDEA826FE7FC7003D20BF /* CompositionalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewCell.swift; sourceTree = "<group>"; };
 		8937008C5F1901ADC326FB50 /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig"; path = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		94448E50ED9D910E94712629 /* Pods-BasicUIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponents.release.xcconfig"; path = "Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents.release.xcconfig"; sourceTree = "<group>"; };
 		9595BCDCEB5A92146C12C593 /* Pods-BasicUIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponents.debug.xcconfig"; path = "Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				2319174526EE021500617A9E /* CustomCell */,
+				814BDEA826FE7FC7003D20BF /* CompositionalCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -207,6 +214,7 @@
 				2319175626EE234C00617A9E /* MyNavigationViewController.swift */,
 				232D1B2526F6005700196177 /* WebViewContainerViewController.swift */,
 				237B95AA26F72B4F00815A6D /* CoreDataViewController.swift */,
+				814BDEA326FE78C0003D20BF /* CompositionalCollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 		23A2AA7726E4D504009310F0 /* BasicUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				814BDEA726FE7C8F003D20BF /* Model */,
 				237B95AF26F74D6B00815A6D /* BasicUIComponents.entitlements */,
 				2373D01A26F719BD0090868F /* Utils */,
 				2319174026EE018A00617A9E /* Cells */,
@@ -320,6 +329,14 @@
 				814BDEA126FE718B003D20BF /* HeroDetailViewController.swift */,
 			);
 			path = HeroPodExample;
+			sourceTree = "<group>";
+		};
+		814BDEA726FE7C8F003D20BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				814BDEA526FE7C5D003D20BF /* compositionalCVModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,12 +585,15 @@
 				2319175526EE1FCB00617A9E /* NavigationExampleViewController.swift in Sources */,
 				237B958326F71E8900815A6D /* MyUserDefaults.swift in Sources */,
 				23A2AA7D26E4D504009310F0 /* LabelAndTextFieldViewController.swift in Sources */,
+				814BDEA626FE7C5D003D20BF /* compositionalCVModel.swift in Sources */,
+				814BDEA926FE7FC7003D20BF /* CompositionalCollectionViewCell.swift in Sources */,
 				23E5078026EC95C900596FFF /* MyLabel.swift in Sources */,
 				232D1B2626F6005700196177 /* WebViewContainerViewController.swift in Sources */,
 				237B95AB26F72B4F00815A6D /* CoreDataViewController.swift in Sources */,
 				23E5078E26ECC2B500596FFF /* ScrollViewController.swift in Sources */,
 				2319175126EE11E700617A9E /* DetailCollectionViewController.swift in Sources */,
 				23ABDDB226F5E3BD00168F99 /* PageViewController.swift in Sources */,
+				814BDEA426FE78C0003D20BF /* CompositionalCollectionViewController.swift in Sources */,
 				2319173F26EDEFCF00617A9E /* UIColor+.swift in Sources */,
 				2373D01C26F719ED0090868F /* MyComponent.swift in Sources */,
 				814BDEA026FE7180003D20BF /* HeroViewController.swift in Sources */,
